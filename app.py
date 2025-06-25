@@ -156,7 +156,7 @@ class ExcelReviewApp:
                     # 파일이 실제로 파일인지 확인
                     if os.path.isfile(image_path):
                         image = Image.open(image_path)
-                        st.image(image, caption=image_name, use_container_width=True)
+                        st.image(image, caption=image_name)
                     else:
                         st.error(f"경로가 파일이 아닙니다: {image_path}")
                 except Exception as e:
